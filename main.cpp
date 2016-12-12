@@ -33,7 +33,7 @@ int main()
         p=new Node;
         scanf("%s",p->name);
         scanf("%d",&p->age);
-        scanf("%s",p->num);
+        scanf("%s",&p->num);
 
         p->next=0;
         tail->next=p;
@@ -43,7 +43,7 @@ int main()
     while(p)
     {
         t=t+1;
-        printf("%d\nName:%s\nAge%d\nNumber%s\n",t,p->name,p->age,p->num);
+        printf("%d\nName:%s\nAge:%d\nNumber:%s\n",t,p->name,p->age,p->num);
         p=p->next;
     }
     return 0;
